@@ -1,0 +1,23 @@
+### Service Document
+GET http://localhost:4004/admin/Sessions
+
+### Create Session
+POST http://localhost:4004/admin/Sessions HTTP/1.1
+content-Type: application/json
+
+{
+    "ID": 107, 
+    "deviceID": "B04"
+} 
+
+
+# ### Update Author
+# PATCH http://localhost:4004/admin/Sessions/105 HTTP/1.1
+# content-Type: application/json
+
+# {
+#     "placeOfBirth": "United Kingdom"
+# } 
+
+# ### Delete Author
+# DELETE http://localhost:4004/admin/Authors/105 HTTP/1.1

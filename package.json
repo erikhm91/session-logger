@@ -1,0 +1,28 @@
+{
+  "name": "practice-logger",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^4",
+    "dayjs": "^1.10.3",
+    "express": "^4",
+    "sqlite3": "^5.0.1"
+  },
+  "scripts": {
+    "start": "cds watch"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "model": "*",
+        "credentials": {
+          "database": "db/practice-logger.db"
+        }
+      }
+    }
+  }
+}

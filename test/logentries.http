@@ -1,0 +1,41 @@
+### Service Document
+GET http://localhost:4004/view/Logentries
+
+### Create Logentries
+POST http://localhost:4004/view/Logentries HTTP/1.1
+content-Type: application/json
+
+{   
+    "ID": 102,
+    "deviceID": "B04",
+    "sessionEnd": true
+} 
+
+### Create Logentries - start A99
+POST http://localhost:4004/view/Logentries HTTP/1.1
+content-Type: application/json
+
+{   
+    "deviceID": "A99",
+    "sessionEnd": false
+} 
+
+### Create Logentries - finish A99
+POST http://localhost:4004/view/Logentries HTTP/1.1
+content-Type: application/json
+
+{   
+    "deviceID": "A99",
+    "sessionEnd": true
+} 
+
+### Create Logentries
+POST http://localhost:4004/view/Logentries HTTP/1.1
+content-Type: application/json
+
+{   
+    "ID": 105,
+    "deviceID": "B04",
+    "sessionEnd": true
+} 
+
