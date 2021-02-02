@@ -18,10 +18,7 @@
     "requires": {
       "db": {
         "kind": "sqlite",
-        "model": "*",
-        "credentials": {
-          "database": "db/practice-logger.db"
-        }
+        "model": "*"
       }
     }
   }
