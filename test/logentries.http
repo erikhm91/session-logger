@@ -39,3 +39,22 @@ content-Type: application/json
     "sessionEnd": true
 } 
 
+#send to raspberry pi:
+### Create Logentries - start A99
+POST http://192.168.0.29:4004/view/Logentries HTTP/1.1
+content-Type: application/json
+
+{   
+    "deviceID": "A99",
+    "sessionEnd": false
+} 
+
+### Create Logentries - finish A99
+POST http://192.168.0.29:4004/view/Logentries HTTP/1.1
+content-Type: application/json
+
+{   
+    "deviceID": "A99",
+    "sessionEnd": true
+} 
+

@@ -18,7 +18,10 @@
     "requires": {
       "db": {
         "kind": "sqlite",
-        "model": "*"
+        "model": "*",
+        "credentials": {
+          "database": "db/database/session-logger.db"
+        }
       }
     }
   }
